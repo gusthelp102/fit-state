@@ -1,6 +1,7 @@
 import 'package:fit_state/screens/exercises_screen.dart';
 import 'package:fit_state/screens/profile_screen.dart';
 import 'package:fit_state/screens/diets_screen.dart'; // Import the DietsScreen
+import 'package:fit_state/screens/bmi_calculation_screen.dart'; // Import the BmiCalculationScreen
 import 'package:flutter/material.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
@@ -14,7 +15,8 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
 
   final List<Widget> _screens = [
     ExercisesScreen(),
-    DietsScreen(), // Add the DietsScreen to the list of screens
+    DietsScreen(),
+    BmiCalculationScreen(),
     ProfileScreen(),
   ];
 
@@ -31,6 +33,8 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: _onTabTapped,
+        selectedItemColor: Colors.lightGreen, // Custom color for selected items
+        unselectedItemColor: Colors.grey, // Custom color for unselected items
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.fitness_center),
@@ -38,7 +42,11 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.restaurant),
-            label: 'Diets', // Added the label for the DietsScreen
+            label: 'Diets',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calculate),
+            label: 'BMI',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
