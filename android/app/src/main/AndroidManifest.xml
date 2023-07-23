@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fit_state">
+    package="com.example.fitstate">
    <application
         android:label="fit_state"
         android:name="${applicationName}"

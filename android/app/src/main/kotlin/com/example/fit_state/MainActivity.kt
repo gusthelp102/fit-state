@@ -1,4 +1,4 @@
-package com.example.fit_state
+package com.example.fitstate
 
 import io.flutter.embedding.android.FlutterActivity
 
