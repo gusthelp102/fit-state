@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "646194171534",
+    "project_id": "fit-state",
+    "storage_bucket": "fit-state.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646194171534:android:eee1a661fa7869b35d03df",
+        "android_client_info": {
+          "package_name": "com.example.fitstate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646194171534-n6g8i1mgtbdrfdla095420us1vpjdrg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO6bU7WLHFsIILFMouwNa82zvSvsRRtf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646194171534-n6g8i1mgtbdrfdla095420us1vpjdrg8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "646194171534-u01f6c7dn5fjp87u3k33n9bqet21s03m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fitstate"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
