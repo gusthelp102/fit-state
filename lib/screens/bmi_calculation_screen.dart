@@ -18,6 +18,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
       appBar: AppBar(
         title: Text('BMI Calculation'),
         backgroundColor: Colors.lightGreen,
+        automaticallyImplyLeading: false,
       ),
       body: Container(
         decoration: BoxDecoration(

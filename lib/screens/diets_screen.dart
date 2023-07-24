@@ -19,9 +19,9 @@ class _DietsScreenState extends State<DietsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Diets'),
-        backgroundColor: Colors.lightGreen,
-      ),
+          title: Text('Diets'),
+          backgroundColor: Colors.lightGreen,
+          automaticallyImplyLeading: false),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(

@@ -24,6 +24,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
       appBar: AppBar(
         title: Text('Exercises'),
         backgroundColor: Colors.lightGreen,
+        automaticallyImplyLeading: false,
       ),
       body: Container(
         decoration: BoxDecoration(

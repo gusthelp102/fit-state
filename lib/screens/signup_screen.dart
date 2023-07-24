@@ -24,8 +24,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
         email: email,
         password: password,
       );
-      // Navigate to the home screen or dashboard after successful sign-up
-      // You can implement the home screen or dashboard here
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => BottomNavigationBarWidget()),
+      );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Sign up failed. Please try again.')),
@@ -105,11 +107,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     _signUp(context);
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => BottomNavigationBarWidget()),
-                    );
                   }
                 },
                 style: ElevatedButton.styleFrom(

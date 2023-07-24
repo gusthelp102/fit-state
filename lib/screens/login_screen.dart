@@ -24,8 +24,11 @@ class _LoginScreenState extends State<LoginScreen> {
         email: email,
         password: password,
       );
-      // Navigate to the home screen or dashboard after successful login
-      // You can implement the home screen or dashboard here
+      // Navigate to the exercises screen after successful log-in
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => BottomNavigationBarWidget()),
+      );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Login failed. Please try again.')),
@@ -86,12 +89,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     _login(context);
-                    // Navigate to the exercises screen after successful log-in
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => BottomNavigationBarWidget()),
-                    );
                   }
                 },
                 style: ElevatedButton.styleFrom(
